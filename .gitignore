@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+data/
+node_modules/
+.vite/
+__pycache__/
+*.py[cod]

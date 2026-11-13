@@ -1,0 +1,24 @@
+LANTERN DISCOVERY ASSISTANT
+QUICK START
+
+LOCAL DEMO (one computer)
+1. Extract this ZIP into a folder.
+2. Make sure Python 3.9 or later is installed.
+3. Double-click run.bat. You can also run `python app.py` from this folder.
+4. Open http://127.0.0.1:8000 if the browser does not open.
+5. Choose Try local demo to see the capture, generate, and review workflow without AI credits.
+6. For real OpenAI generation, copy .env.example to .env, add your API key, and restart.
+
+The release ZIP contains the built React and Tailwind frontend. It does not need Node.js to run.
+
+VS CODE FRONTEND DEVELOPMENT
+Install Node.js 20.19 or newer. In VS Code, open two terminals in this folder. Run `python app.py` in terminal one. In terminal two, run `npm install` once, then `npm run dev`. Open the Vite address printed in terminal two (usually http://127.0.0.1:5173). Before sharing changes, run `npm run build` so dist/ contains the updated frontend.
+
+SHARING
+The local demo saves projects on this computer only. Use Back up projects to transfer selected project records securely to another Lantern installation. For shared team accounts and live shared records, read DEPLOYMENT.md and deploy the app on a private server with HTTPS and persistent storage. Merely sending this ZIP does not create online sharing.
+
+TEAM ROLES
+An administrator adds accounts under Team accounts. Analysts draft and edit, reviewers check and approve assigned projects, and administrators manage accounts, backups, retention settings, archive and delete actions. All signed-in team members share the hosted project records.
+
+SECURITY
+Keep .env and backups private. The API key and real client data do not belong in the application ZIP. The shared server must be restricted to Lantern and accessed only through HTTPS. Read the deployment limitations before using client-confidential information.
